@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤 Weather App</h1>
+
+        <div class="search">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="searchWeather()">Search</button>
+            <button onclick="getLocation()">📍</button>
+        </div>
+
+        <div class="weather">
+
+            <h2 id="name">Una, IN</h2>
+
+            <img id="icon" src="" alt="Weather Icon">
+
+            <h1 id="temp">--°C</h1>
+
+            <h3 id="condition">---</h3>
+
+            <p id="humidity">Humidity: --%</p>
+
+            <p id="wind">Wind: -- m/s</p>
+
+        </div>
+
+        <h2>5-Day Forecast</h2>
+
+        <div id="forecast"></div>
+
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
